@@ -14,12 +14,12 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
         $subject = $_POST['template-contactform-subject'];
         $message = $_POST['template-contactform-message'];
 
-        $subject = isset($subject) ? $subject : 'New Message From Contact Form';
+        $subject = isset($subject) ? $subject : 'New Message From YCS Website';
 
         $botcheck = $_POST['template-contactform-botcheck'];
 
-        $toemail = ''; // Your Email Address
-        $toname = ''; // Your Name
+        $toemail = 'stephenjayyoung@gmail.com'; // Your Email Address
+        $toname = 'Stephen Young'; // Your Name
 
         if( $botcheck == '' ) {
 
@@ -42,7 +42,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
             $sendEmail = $mail->Send();
 
             if( $sendEmail == true ):
-                echo 'We have <strong>successfully</strong> received your Message and will get Back to you as soon as possible.';
+                echo 'I have <strong>successfully</strong> received your message, thanks! I will get back to you as soon as possible. Have a great day!';
             else:
                 echo 'Email <strong>could not</strong> be sent due to some Unexpected Error. Please Try Again later.<br /><br /><strong>Reason:</strong><br />' . $mail->ErrorInfo . '';
             endif;
@@ -50,7 +50,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
             echo 'Bot <strong>Detected</strong>.! Clean yourself Botster.!';
         }
     } else {
-        echo 'Please <strong>Fill up</strong> all the Fields and Try Again.';
+        echo 'Please <strong>complete</strong> all of the Fields and Try Again.';
     }
 } else {
     echo 'An <strong>unexpected error</strong> occured. Please Try Again later.';
