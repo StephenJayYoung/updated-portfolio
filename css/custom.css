@@ -1,3 +1,62 @@
 .heading-block:after {
     border-top: 2px solid #fff !important;
 }
+
+.ycs-logo{
+	width: 55%; height: 55%; margin-bottom: 20px; opacity: .7
+}
+
+.clean-and-simple{
+	font-size: 30px !important
+}
+
+.header-arrows{
+	width: 6%; height: 6%; margin-top: 270px
+}
+
+@media(max-width: 480px){ 
+	.ycs-logo{
+			width: 100%;
+			height: 100%;
+			margin-bottom: 20px;
+			opacity: .7;
+			margin-top: 50px;
+	}
+
+	.clean-and-simple{
+		font-size: 22px !important;
+	}
+
+	.button.button-border.button-light {
+	    margin-top: 50px !important;
+	}
+
+	.header-arrows{
+		width: 16%; height: 16%; margin-top: 270px
+	}
+
+}
+
+@media(min-width: 480px) and (max-width: 768px){
+	.button.button-border.button-light {
+	    margin-top: 50px !important;
+	}
+	.header-arrows{
+		width: 12%; height: 12%; margin-top: 270px
+	}
+
+	.ycs-logo{
+		width: 75%; height: 75%; margin-bottom: 20px; opacity: .7
+	}
+
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+
+	.header-arrows{
+		width: 9%; height: 9%; margin-top: 270px
+	}
+
+
+}
+
